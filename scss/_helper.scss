@@ -1,0 +1,11 @@
+$grid-area: (
+  "1": fi,
+  "2": se,
+  "3": th,
+  "4": fr,
+  "5": fv
+);
+
+@function set-gridArea-name($gridArea-name) {
+  @return map-get($grid-area, $gridArea-name);
+}
